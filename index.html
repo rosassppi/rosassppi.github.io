@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="color-scheme" content="dark">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rosângela Sousa | Portfólio</title>
+<meta name="description" content="Portfólio de Rosângela Sousa: projetos de análise de dados e finanças com Excel, SQL e Python.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#17191E; --card:#21252C; --line:#323843; --img:#2A2F37;
+  --text:#ECEEF1; --muted:#AAB2BD; --link:#8DB8FF;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);
+  font-family:"Source Sans 3",-apple-system,"Segoe UI",Arial,sans-serif;font-size:18px;line-height:1.6}
+a{color:var(--link);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+#particles{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+
+header{padding:80px 0 56px;text-align:center}
+h1{font-size:2.6rem;line-height:1.15;margin:0 0 16px;font-weight:700}
+.intro{max-width:680px;color:var(--muted);margin:0 auto 14px}
+.intro:last-of-type{margin-bottom:26px}
+.social{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.social a{display:inline-block;padding:9px 18px;border:1px solid var(--line);border-radius:6px;
+  color:var(--text);text-decoration:none;font-weight:600;font-size:.95rem}
+.social a{background:var(--card)}
+.social a:hover{border-color:#5A6372}
+
+h2{font-size:1.6rem;margin:0 0 24px;font-weight:700;text-align:center}
+.projects{padding:24px 0 64px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;
+  display:flex;flex-direction:column}
+.shot{aspect-ratio:16/9;background:var(--img);border-bottom:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.9rem}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.shot.left img{object-position:left top}
+.shot.right img{object-position:right top}
+.shot.fit{background:#FFFFFF}
+.shot.fit img{object-fit:contain}
+.body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:1.2rem;margin:0 0 4px;line-height:1.3}
+.tools{font-size:.88rem;color:var(--muted);margin:0 0 10px}
+.card p.sum{margin:0 0 16px;font-size:1rem}
+.card a.go{margin-top:auto;font-weight:600;font-size:.98rem}
+
+.about{padding:56px 0;border-top:1px solid var(--line);text-align:center}
+.about p{max-width:680px;margin:0 auto 14px}
+footer{padding:32px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem;display:flex;justify-content:center;flex-wrap:wrap;gap:10px 24px}
+
+@media (max-width:760px){
+  header{padding:48px 0 40px} h1{font-size:2.1rem}
+  .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="wrap">
+
+  <header>
+    <h1>Rosângela Sousa</h1>
+    <p class="intro">Sou estudante de Análise e Desenvolvimento de Sistemas na UniCesumar, com conclusão prevista para 2028, e estudo análise de dados usando Excel, SQL e Python, com interesse especial em finanças.</p>
+    <p class="intro">Venho de mais de oito anos de experiência em operações, atendimento e rotinas administrativas, onde aprendi a organizar informação e a enxergar processos. Aqui estão alguns dos projetos que desenvolvi.</p>
+    <nav class="social" aria-label="Redes">
+      <a href="https://www.linkedin.com/in/rosangelasousaeng">LinkedIn</a>
+      <a href="https://github.com/rosassppi">GitHub</a>
+    </nav>
+  </header>
+
+  <section class="projects" id="projetos">
+    <h2>Projetos</h2>
+    <div class="grid">
+
+      <article class="card">
+        <div class="shot"><img src="imagens/raio-x.png" alt="Página da pesquisa Raio-X Financeiro da Geração Z" loading="lazy"></div>
+        <div class="body">
+          <h3>Raio-X Financeiro da Geração Z</h3>
+          <p class="tools">Pesquisa própria</p>
+          <p class="sum">Pesquisa com 110 respostas sobre como jovens brasileiros lidam com o dinheiro: controle de gastos, reserva de emergência, crédito e investimentos.</p>
+          <a class="go" href="https://raio-x-genz.vercel.app/">Ver pesquisa</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot fit"><img src="imagens/twitch.png" alt="Gráfico dos 5 jogos mais assistidos na Twitch entre 2016 e 2024" loading="lazy"></div>
+        <div class="body">
+          <h3>Twitch Gaming Analytics</h3>
+          <p class="tools">SQL Server, Python, pandas, matplotlib</p>
+          <p class="sum">Análise de mais de 21 mil registros da Twitch entre 2016 e 2024, mostrando o impacto da pandemia na audiência e os jogos que dominaram o período.</p>
+          <a class="go" href="https://github.com/rosassppi/twitch_gaming_analytics">Ver no GitHub</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot right"><img src="imagens/ecommerce.png" alt="Tabelas dinâmicas da análise de compras do e-commerce" loading="lazy"></div>
+        <div class="body">
+          <h3>Análise de compras de e-commerce</h3>
+          <p class="tools">Excel</p>
+          <p class="sum">Cerca de 3 mil pedidos de uma loja de suplementos analisados por categoria, fornecedor, período e estado, com tabelas dinâmicas e gráficos.</p>
+          <a class="go" href="arquivos/analise-ecommerce-suplementos.xlsx" download>Baixar planilha</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot left"><img src="imagens/controle-financeiro.png" alt="Aba Financeiro da planilha de controle financeiro" loading="lazy"></div>
+        <div class="body">
+          <h3>Controle financeiro para autônomos</h3>
+          <p class="tools">Excel</p>
+          <p class="sum">Planilha de entradas e saídas com status de pagamento automático, precificação com cálculo de margem e resumo em tabelas dinâmicas.</p>
+          <a class="go" href="arquivos/controle-financeiro.xlsx" download>Baixar planilha</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <footer>
+    <a href="mailto:rosassppi@gmail.com">rosassppi@gmail.com</a>
+    <a href="https://www.linkedin.com/in/rosangelasousaeng">LinkedIn</a>
+    <a href="https://github.com/rosassppi">GitHub</a>
+  </footer>
+
+</div>
+<script>
+(function(){
+  var c=document.getElementById('particles'); if(!c||!c.getContext) return;
+  var x=c.getContext('2d'), w, h, dpr=Math.min(window.devicePixelRatio||1,2), pts=[];
+  var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function size(){
+    w=window.innerWidth; h=window.innerHeight;
+    c.width=w*dpr; c.height=h*dpr; x.setTransform(dpr,0,0,dpr,0,0);
+    var n=Math.round(Math.min(70, w*h/18000));
+    pts=[]; for(var i=0;i<n;i++) pts.push({x:Math.random()*w,y:Math.random()*h,
+      vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.25,r:Math.random()*1.8+1});
+  }
+  function draw(){
+    x.clearRect(0,0,w,h);
+    for(var i=0;i<pts.length;i++){
+      var p=pts[i];
+      if(!still){p.x+=p.vx;p.y+=p.vy;
+        if(p.x<-5)p.x=w+5; if(p.x>w+5)p.x=-5; if(p.y<-5)p.y=h+5; if(p.y>h+5)p.y=-5;}
+      x.beginPath(); x.arc(p.x,p.y,p.r,0,Math.PI*2); x.fillStyle='rgba(225,232,242,.55)'; x.fill();
+      for(var j=i+1;j<pts.length;j++){
+        var q=pts[j], dx=p.x-q.x, dy=p.y-q.y, d=dx*dx+dy*dy;
+        if(d<14000){x.strokeStyle='rgba(225,232,242,'+(.14*(1-d/14000))+')';x.lineWidth=1;
+          x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.stroke();}
+      }
+    }
+    if(!still) requestAnimationFrame(draw);
+  }
+  size(); draw();
+  window.addEventListener('resize',function(){size(); if(still) draw();});
+})();
+</script>
+</body>
+</html>
